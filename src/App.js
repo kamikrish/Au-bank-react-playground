@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import TopicOneHome from "./components/TopicOne/TopicOneHome";
+import TopicThreeHome from "./components/TopicThree/TopicThreeHome";
+import TopicTwoHome from "./components/TopicTwo/TopicTwoHome";
+// 
+// import Counters from "./components/TopicThree/Counters";
+// import Counter from "./components/TopicTwo/Counter";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to AU Small Finance Bank</h1>
+      <hr />
+      {/* <TopicOneHome /> */}
+      {/* <TopicTwoHome/> */}
+      <TopicThreeHome/>
     </div>
   );
 }
-
-export default App;
